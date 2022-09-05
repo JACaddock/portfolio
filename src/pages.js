@@ -1,5 +1,13 @@
+import Portfolio from "./img/portfolio.jpg";
+import img2 from "./img/img2.jpg";
+import Metronome from "./img/metronome.png";
+import img4 from "./img/img4.jpg";
+import imga from "./img/imga.jpg";
+import imgb from "./img/imgb.jpg";
+import imgc from "./img/imgc.jpg";
+
 export const pages = {
-    about:{   
+    about: {   
         id: 0,
         name: "About me",
         link: "/",
@@ -16,7 +24,7 @@ export const pages = {
         ]
     }, 
 
-    projects:{
+    projects: {
         id: 1,
         name: "Projects",
         link: "/projects",
@@ -25,18 +33,20 @@ export const pages = {
             {
                 id: 0,
                 title: "Portfolio",
-                img: "./img/img1.jpg",
+                img: Portfolio,
                 alt: "Colourful Striped Pattern",
+                enabled: true,
                 desc: `My website made using React, as a software developer it's only right that I have one and every aspect of this site custom made. 
                         I do know if I'll ever truly regard this project as complete because it's something I want to add to for the rest of my life.`,
                 tech: ["React", "Javascript", "HTML", "CSS"],
-                link: "http://localhost:3000"
+                link: "https://jacaddock.github.io/portfolio/"
             },
             {
                 id: 1,
                 title: "Image 2",
-                img: "./img/img2.jpg",
+                img: img2,
                 alt: "Night Time Europe",
+                enabled: false,
                 desc: `Dark Soul's inspired turn-based game that come out of a conversation with a friend, we wondered what such a game would look like
                         and if it could work. Well we decided to just go for it and find out during the creation`,
                 tech: ["Godot", "GDScript"]
@@ -44,8 +54,9 @@ export const pages = {
             {
                 id: 2,
                 title: "Metronome App",
-                img: "./img/metronome.png",
+                img: Metronome,
                 alt: "Metronome",
+                enabled: true,
                 desc: `Metronome Web App created for a company as a take home technical task`,
                 tech: ["React", "JavaScript", "HTML", "CSS"],
                 link: "https://jacaddock.github.io/metronome-app/"
@@ -53,8 +64,9 @@ export const pages = {
             {
                 id: 3,
                 title: "Lorem ipsum",
-                img: "./img/img4.jpg",
+                img: img4,
                 alt: "N/A",
+                enabled: false,
                 desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac tristique arcu. Donec non ante ligula. Proin libero neque, eleifend eu arcu et, 
                     ultrices semper elit. Nunc nibh nisl, egestas a libero eu, tristique suscipit nibh. In iaculis felis id venenatis iaculis. 
                     Sed eget nisi ut quam feugiat facilisis. Nam ac rhoncus risus.`,
@@ -74,20 +86,20 @@ export const pages = {
                 {
                     id: 0,
                     title: "Image A",
-                    img: "./img/imga.jpg",
+                    img: imga,
                     alt: "Lake with Ferris Wheel",
                 },
                 {
                     id: 1,
                     title: "Image B",
-                    img: "./img/imgb.jpg",
+                    img: imgb,
                     alt: "Sunset",
 
                 },
                 {
                     id: 2,
                     title: "Image C",
-                    img: "./img/imgc.jpg",
+                    img: imgc,
                     alt: "Snowy Mountain with Reflection",
                 }
             ]

@@ -42,7 +42,7 @@ const Projects = ({projects}) => {
 
             <div className="card h-card">
                 { projects.map((project) => { 
-                        if (project !== selected ) {
+                        if (project !== selected && project.enabled) {
                             return (
                                 <div 
                                 key={project.id} 

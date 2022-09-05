@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Github Repo of my Portfolio
 
-Currently I am working on this but will eventually host it using github pages.
+Currently I am working on this but it is hosted using github pages: [Live Site](https://jacaddock.github.io/portfolio/)

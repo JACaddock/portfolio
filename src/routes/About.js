@@ -1,3 +1,6 @@
+import Campaign from "../img/Campaign_10.png";
+import imga from "../img/imga.jpg";
+
 const About = ({content}) => {
     return (
         <div className={`main`}>
@@ -5,11 +8,11 @@ const About = ({content}) => {
 
             <div className="block bg-b">
                 { content.map(about => { return ( <p key={about.id}>{about.text}</p> ) } ) }
-                <img src="./img/Campaign_10.png" className="card-image" alt="Sunset" />
+                <img src={Campaign} className="card-image" alt="Sunset" />
             </div>
 
             <div className="block">
-                <img src="./img/imga.jpg" className="card-image" alt="Ferris wheel" />
+                <img src={imga} className="card-image" alt="Ferris wheel" />
                 <p>Content for formatting</p>
             </div>
         </div>
