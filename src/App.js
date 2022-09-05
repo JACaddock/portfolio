@@ -24,8 +24,8 @@ const App = () => {
 
             <Routes>
                 <Route path="/portfolio" element={<About content={pages.about.content} />} />
-                <Route path="projects" element={<Projects projects={pages.projects.content} />} />
-                <Route path="fun" element={<Fun currentPage={pages.fun} />} />
+                <Route path="/portfolio/projects" element={<Projects projects={pages.projects.content} />} />
+                <Route path="/portfolio/fun" element={<Fun currentPage={pages.fun} />} />
                 <Route
                     path="*"
                     element={

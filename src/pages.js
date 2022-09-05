@@ -27,7 +27,7 @@ export const pages = {
     projects: {
         id: 1,
         name: "Projects",
-        link: "/projects",
+        link: "portfolio/projects",
         enabled: true,
         content: [
             {
@@ -77,7 +77,7 @@ export const pages = {
     fun: {
         id: 2,
         name: "Coming Soon...",
-        link: "fun",
+        link: "portfolio/fun",
         class: "card",
         enabled: false,
         content: {
