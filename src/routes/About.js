@@ -5,7 +5,7 @@ const About = ({content}) => {
 
             <div className="block bg-b">
                 { content.map(about => { return ( <p key={about.id}>{about.text}</p> ) } ) }
-                <img src="./img/imgb.jpg" className="card-image" alt="Sunset" />
+                <img src="./img/Campaign_10.png" className="card-image" alt="Sunset" />
             </div>
 
             <div className="block">

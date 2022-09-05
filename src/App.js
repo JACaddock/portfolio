@@ -4,15 +4,23 @@ import Projects from "./routes/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { pages } from "./pages";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 
 
 
 const App = () => {
+    function getButtons(classes) {
+        return Object.keys(pages).map((page) => {
+            return ( 
+                    pages[page].enabled ? <Link key={pages[page].id} to={pages[page].link} className={classes}>{ pages[page].name }</Link> : <button key={pages[page].id} className={classes} disabled>{ pages[page].name }</button>
+                )
+        })
+    }
+
     return(
         <div className="app" id="light">
-            <Navbar pages={Object.keys(pages).map(page => {return {name: pages[page].name, id: pages[page].id, link: pages[page].link, enabled: pages[page].enabled}})} />
+            <Navbar buttons={getButtons("nav-btn")} />
 
             <Routes>
                 <Route path="/" element={<About content={pages.about.content} />} />
@@ -28,7 +36,7 @@ const App = () => {
                     />
             </Routes>
             
-            <Footer />
+            <Footer buttons={getButtons("link")} />
             
         </div>
     );

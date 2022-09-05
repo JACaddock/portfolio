@@ -18,7 +18,6 @@ export const pages = {
 
     projects:{
         id: 1,
-        githubtoken: "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",
         name: "Projects",
         link: "/projects",
         enabled: true,
