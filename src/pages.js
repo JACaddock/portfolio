@@ -10,7 +10,7 @@ export const pages = {
     about: {   
         id: 0,
         name: "About me",
-        link: "/",
+        link: "/portfolio",
         enabled: true,
         content: [
             {

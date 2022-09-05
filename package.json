@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://jacaddock.github.io/",
+  "homepage": "https://jacaddock.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.6.5",

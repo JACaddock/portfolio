@@ -23,7 +23,7 @@ const App = () => {
             <Navbar buttons={getButtons("nav-btn")} />
 
             <Routes>
-                <Route path="/" element={<About content={pages.about.content} />} />
+                <Route path="/portfolio" element={<About content={pages.about.content} />} />
                 <Route path="projects" element={<Projects projects={pages.projects.content} />} />
                 <Route path="fun" element={<Fun currentPage={pages.fun} />} />
                 <Route
