@@ -13,7 +13,6 @@ const Footer = ({buttons}) => {
                         <small className="sm-underline">Social</small>
                         <small><a className="link" href="https://github.com/JACaddock" target="_blank" rel="noreferrer">Github</a></small>
                         <small><a className="link" href="https://www.linkedin.com/in/james-caddock/" target="_blank" rel="noreferrer">Linkedin</a></small>
-                        <small><a className="link" href="https://www.linkedin.com/in/james-caddock/" target="_blank" rel="noreferrer">Thingy</a></small>
                     </div>
                 </div>
                 

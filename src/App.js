@@ -1,5 +1,5 @@
-import Fun from "./routes/Fun";
-import About from "./routes/About"
+/*import Fun from "./routes/Fun";
+import About from "./routes/About"*/
 import Projects from "./routes/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,9 +23,9 @@ const App = () => {
             <Navbar buttons={getButtons("nav-btn")} />
 
             <Routes>
-                <Route path="/portfolio" element={<About content={pages.about.content} />} />
-                <Route path="/portfolio/projects" element={<Projects projects={pages.projects.content} />} />
-                <Route path="/portfolio/fun" element={<Fun currentPage={pages.fun} />} />
+                {/* <Route path="/portfolio" element={<About content={pages.about.content} />} /> */}
+                <Route path="/portfolio" element={<Projects projects={pages.projects.content} />} />
+                {/* <Route path="/portfolio/fun" element={<Fun currentPage={pages.fun} />} /> */}
                 <Route
                     path="*"
                     element={

@@ -1,6 +1,6 @@
 import Portfolio from "./img/portfolio.jpg";
-import img2 from "./img/img2.jpg";
 import Metronome from "./img/metronome.png";
+import GameSearch from "./img/game-search.jpg"
 import img4 from "./img/img4.jpg";
 import imga from "./img/imga.jpg";
 import imgb from "./img/imgb.jpg";
@@ -11,7 +11,7 @@ export const pages = {
         id: 0,
         name: "About me",
         link: "/portfolio",
-        enabled: true,
+        enabled: false,
         content: [
             {
                 id: 0,
@@ -27,29 +27,29 @@ export const pages = {
     projects: {
         id: 1,
         name: "Projects",
-        link: "portfolio/projects",
+        link: "portfolio",
         enabled: true,
         content: [
             {
                 id: 0,
                 title: "Portfolio",
                 img: Portfolio,
-                alt: "Colourful Striped Pattern",
+                alt: "Portfolio",
                 enabled: true,
                 desc: `My website made using React, as a software developer it's only right that I have one and every aspect of this site custom made. 
                         I do know if I'll ever truly regard this project as complete because it's something I want to add to for the rest of my life.`,
-                tech: ["React", "Javascript", "HTML", "CSS"],
+                tech: ["React", "JavaScript", "HTML", "CSS"],
                 link: "https://jacaddock.github.io/portfolio/"
             },
             {
                 id: 1,
-                title: "Image 2",
-                img: img2,
-                alt: "Night Time Europe",
-                enabled: false,
-                desc: `Dark Soul's inspired turn-based game that come out of a conversation with a friend, we wondered what such a game would look like
-                        and if it could work. Well we decided to just go for it and find out during the creation`,
-                tech: ["Godot", "GDScript"]
+                title: "Game Search",
+                img: GameSearch,
+                alt: "Game Search App",
+                enabled: true,
+                desc: `Web app that allows you to search for any game and get any and all useful links and tidbits about said game.`,
+                tech: ["React", "JavaScript", "Redux", "axios"],
+                link: "https://jacaddock.github.io/game-search/"
             },
             {
                 id: 2,
