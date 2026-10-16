@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import imga from "../img/imga.jpg";
+//import imga from "../img/imga.jpg";
 import profile from "../img/profilepic.png";
 
 const About = ({content}) => {
