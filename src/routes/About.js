@@ -19,7 +19,8 @@ const About = ({content}) => {
                     </div>
                 </div>
             </section>
-
+            
+            {/*
             <section className="feature">
                 <div className="feature-media">
                     <img src={imga} alt="Ferris wheel" />
@@ -39,6 +40,8 @@ const About = ({content}) => {
                     <p>Content for formatting</p>
                 </div>
             </section>
+            */}
+
         </div>
     );
 };

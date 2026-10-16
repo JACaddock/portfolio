@@ -36,7 +36,7 @@ export const pages = {
                 title: "Portfolio",
                 img: Portfolio,
                 alt: "Portfolio",
-                enabled: true,
+                enabled: false,
                 desc: `My website made using React, as a software developer it's only right that I have one and every aspect of this site custom made. 
                         I do know if I'll ever truly regard this project as complete because it's something I want to add to for the rest of my life.`,
                 tech: ["React", "JavaScript", "HTML", "CSS"],
@@ -80,7 +80,7 @@ export const pages = {
         name: "Coming Soon...",
         link: "portfolio/fun",
         class: "card",
-        enabled: true,
+        enabled: false,
         content: {
             class: "card-item",
             data: [
