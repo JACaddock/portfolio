@@ -6,16 +6,17 @@ import imga from "./img/imga.jpg";
 import imgb from "./img/imgb.jpg";
 import imgc from "./img/imgc.jpg";
 
+
 export const pages = {
     about: {   
         id: 0,
-        name: "About me",
-        link: "/portfolio",
+        name: "Home",
+        link: "portfolio",
         enabled: false,
         content: [
             {
                 id: 0,
-                text: "This is my about page",
+                text: "Hey, I'm James and this is my website",
             },
             {
                 id: 1,
@@ -27,7 +28,7 @@ export const pages = {
     projects: {
         id: 1,
         name: "Projects",
-        link: "portfolio",
+        link: "portfolio/projects",
         enabled: true,
         content: [
             {
@@ -79,7 +80,7 @@ export const pages = {
         name: "Coming Soon...",
         link: "portfolio/fun",
         class: "card",
-        enabled: false,
+        enabled: true,
         content: {
             class: "card-item",
             data: [

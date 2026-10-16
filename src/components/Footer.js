@@ -1,21 +1,26 @@
 const Footer = ({buttons}) => {
     return (
         <footer>
-                <div className="h-box">
-                    <small>James Caddock © 2022</small>
+            <div className="container footer-inner">
+                <div className="footer-brand">
+                    <span className="nav-title">
+                        <span className="nav-logo" aria-hidden="true">JC</span>
+                        James Caddock
+                    </span>
+                    <p>© {new Date().getFullYear()} James Caddock</p>
                 </div>
-                <div className="h-box col-gap-2">
-                    <div className="v-box margin-b-0 row-gap-half">
-                        <small className="sm-underline">Pages</small>
+                <div className="footer-cols">
+                    <div className="footer-col">
+                        <span className="footer-heading">Pages</span>
                         {buttons}
                     </div>
-                    <div className="v-box margin-b-0 row-gap-half">
-                        <small className="sm-underline">Social</small>
-                        <small><a className="link" href="https://github.com/JACaddock" target="_blank" rel="noreferrer">Github</a></small>
-                        <small><a className="link" href="https://www.linkedin.com/in/james-caddock/" target="_blank" rel="noreferrer">Linkedin</a></small>
+                    <div className="footer-col">
+                        <span className="footer-heading">Social</span>
+                        <a className="link" href="https://github.com/JACaddock" target="_blank" rel="noreferrer">GitHub</a>
+                        <a className="link" href="https://www.linkedin.com/in/james-caddock/" target="_blank" rel="noreferrer">LinkedIn</a>
                     </div>
                 </div>
-                
+            </div>
         </footer>
     );
 }

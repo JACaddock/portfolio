@@ -10,25 +10,24 @@ const About = () => {
 
 const Fun = ({currentPage}) => {
     return (
-        <div className={`main`}>
-            <h1 className="page-title">{currentPage.name}</h1>
+        <div className="main">
+            <header className="page-header">
+                <span className="eyebrow">Fun</span>
+                <h1 className="page-title">{currentPage.name}</h1>
+            </header>
 
-            <div className={currentPage.class}>
-                { 
-                    currentPage.id === 0 
-                ? 
-                    <About /> 
+            <div className="card-grid">
+                {
+                    currentPage.id === 0
+                ?
+                    <About />
                 :
                     currentPage.content.data.map((data) => {
                         return (
-                            <div 
-                            key={data.id} 
-                            className={currentPage.content.class}
-                            >
-                                <h2>{data.title}</h2>
-                                {data.img ? <img src={data.img} alt={data.alt} className="card-image image-border" /> : <></>}
-                            </div>
-
+                            <figure key={data.id} className="gallery-item">
+                                {data.img ? <img src={data.img} alt={data.alt} /> : <></>}
+                                <figcaption>{data.title}</figcaption>
+                            </figure>
                         )
                     })
                 }

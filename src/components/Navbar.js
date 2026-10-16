@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 const Navbar = ({buttons}) => {
     return (
         <header className="nav">
-            <Link to="/portfolio" className="nav-title cursor-pointer">James Caddock</Link>
-            <ul className="nav-item">
-                {buttons}
-            </ul>
-            
-            <div className="nav-block"></div>
+            <div className="container nav-inner">
+                <Link to="/portfolio" className="nav-title">
+                    <span className="nav-logo" aria-hidden="true">JC</span>
+                    <span className="nav-name">James Caddock</span>
+                </Link>
+                <nav className="nav-item">
+                    {buttons}
+                </nav>
+            </div>
         </header>
     );
 }
